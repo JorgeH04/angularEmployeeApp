@@ -1,0 +1,17 @@
+<div class="card mb-2">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <h3>{{ task.nombres }}</h3>
+        <h3>{{ task.seccion }}</h3>
+        <h3>{{ task.edad }}</h3>
+        <h3>{{ task.salario }}</h3>
+        <div>
+
+            <button (click)="deleteTask(task)" class="btn btn-danger">
+                Delete
+            </button>
+        </div>
+    </div>
+    <div class="card-body" [hidden]="task.hide">
+        <p>{{task.description}}</p>
+    </div>
+</div>

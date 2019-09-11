@@ -1,0 +1,22 @@
+<div class="card">
+    <div class="card-body">
+      <!-- FORM TO ADD TASKS -->
+      <form (submit)="addTask(id1, id2, id3, id4, id5)">
+        <div class="form-group">
+          <input type="text" placeholder="Nombres" #id1 class="form-control">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Sección" #id2 class="form-control">
+        </div>
+        <div class="form-group">
+          <input type="number" placeholder="Edad" #id3 class="form-control">
+        </div>
+        <div class="form-group">
+          <input type="number" placeholder="Salario" #id4 class="form-control">
+        </div>
+        
+        <button type="submit" class="btn btn-primary btn-block">Send</button>
+      </form>
+    </div>
+  </div>
+  
